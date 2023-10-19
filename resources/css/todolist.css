@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 75rem;
+    width: 100%;
+    background: #ededfc;
+    
+}
+
+.wrapper{
+    margin: 120px auto;
+    max-width: 700px;
+    width: 100%;
+    background: #d8dbff;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.wrapper header{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(104, 123, 204);
+}
+
+/* .wrapper안에 있는 것을 부를때(태그 설정 방법은 무궁무진) */
+.wrapper .inputField{
+    display: flex;  
+    margin: 5px auto 20px ; 
+    height: 45px;
+    width: 100%;
+}
+
+.inputField button{
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    min-width: 50px;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    background: rgb(104, 123, 204);
+    cursor: pointer;
+}
+
+.inputField input{
+    color: black;
+    padding-left: 15px;
+    width: 550px;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;  /* inputbox 클릭시 테두리 안보이게 */
+}
+
+.wrapper .Todolist{
+    display: flex;
+    border: bottom 1px solid;
+}
+
+.Todolist li{
+    width: 100%;
+    list-style: none;
+    line-height: 45px; /* 수직 가운데 정렬 : 보통 height랑 같은 숫자를 씀 */
+    position: relative;
+    text-indent: 15px; /* 들여쓰기 */
+    background: white;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer{
+    height: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.button-group{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.button-group button{
+    border: none;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.5rem;
+    font-size: 13px;
+    font-weight: 900;
+    width: 60px;
+    height: 30px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.button-group button:hover{
+    color : rgb(104, 123, 204);
+    background-color: white;
+}
+
+.all-clear-btn{
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight: 900;
+   
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.5rem;
+    
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background: rgb(104, 123, 204);
+}
+
+.all-clear-btn:hover{
+    background-color: black;
+    color: lightcoral;
+}
+
+.select-clear-btn{
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight: 900;
+   
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.5rem;
+    
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background: rgb(104, 123, 204);
+}
+
+.select-clear-btn:hover{
+    background-color: black;
+    color: lightcoral;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(104, 123, 204);
+}
+
+.list{
+    border-bottom : 1px;        
+    border-bottom-style: solid;
+    border-bottom-color: #ddd;
+    color : black;
+}
+
+.on{
+    text-decoration: line-through;
+    color: gray!important;
+}
+
+.checked{
+    color: rgb(110, 202, 130);
+}
+
+.checkBtn{
+    font-Size : 25px;  
+    cursor : pointer;
+    background-color: white;
+    position:relative;
+    float: left;
+    width: 40px;
+    height: 100%;
+}
+
+.inline{
+    display: inline;
+}
+
+.delBtn{
+    font-size:19px;
+    border: none;
+    float: right;
+    right: 20px;
+    margin-top: 12px;
+    cursor: pointer;
+    background-color :white;
+}
+
+.hidden{
+    display: none;
+}

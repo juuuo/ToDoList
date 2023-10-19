@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/todolist.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>TodoList</header>
+        <div class="inputField">
+            <button class="complete-all-btn">✔</button>
+            <input type="text" id="addValue" placeholder="할 일 추가하기" autofocus/>
+            <button class="button" id="btn" onclick="addTodo()"><i class="xi-plus xi-1x"></i></button>
+        </div>
+        <div>
+            <ul class="Todolist" id="addTodo">
+                <li><div id="result"></div></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p class="lists-left">0 list left</p>
+            <div class="button-group">
+                <button id="show-all-btn">전체</button>
+                <button id="show-active-btn">진행중</button>
+                <button id="show-completed-btn">완료</button>
+            </div>
+            <button class="select-clear-btn" id="selectClear" onclick="selectClear()">선택 삭제</button>
+            <button class="all-clear-btn" id="allClear" onclick="allClearList()">모두 삭제</button>
+        </div>
+    </div>
+    
+    <script src="../js/todolist.js"></script>
+
+</body>
+</html>
