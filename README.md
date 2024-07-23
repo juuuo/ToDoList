@@ -1,6 +1,7 @@
 # :heavy_check_mark: ToDoList
 * javascript를 사용한 ToDoList 만들기
-## :computer: 소개
+  
+## :memo: 소개
 * 페이지 새로고침 시 전체 List가 갱신되는 ToDoList 입니다.
 
 ## :gear: 구현한 기능들
@@ -14,6 +15,48 @@
 * 완료 버튼 : 완료된 List 들만 보여 줌
 * list left : 현재 작성된 List 들의 개수를 보여 줌
 
+## :computer: 구현 화면
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5530e323-a6cd-4c87-839c-6d1a198eba4c" width="80%" height="80%"/>
+  <img src="https://github.com/user-attachments/assets/84681a2c-8276-49a9-8f06-c85173cb8bf9" width="80%" height="80%"/>
+  <img src="https://github.com/user-attachments/assets/572345e7-cdda-412d-a744-1dda954517f3" width="80%" height="80%"/>
+  <img src="https://github.com/user-attachments/assets/a3b60f31-d03e-40a4-8c55-38f908ecb933" width="80%" height="80%"/>
+  <img src="https://github.com/user-attachments/assets/1933c3b0-1392-46f0-8016-3d504275d74e" width="80%" height="80%"/>
+</p>
+
+## :dart: 트러블슈팅
+### :boom: 리스트 개수 표시
+#### :interrobang: 고민
+```
+리스트의 개수를 세기 위해 리스트 목록 하단에 lists left 기능을 넣으려는데
+어떻게 기능을 구현할지 고민이 됐다.
+```
+#### :100: 해결 방법
+```
+내가 선택한 방법은 이러하다.
+처음 리스트 추가할 때 그 안에 no를 숨겨놓고 각각의 리스트 추가, 삭제할 때
+이미 숨겨놓은 no의 개수에 변화를 주어 lists left를 계산할 수 있게 했다.
+```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de930f50-4035-4aa2-822d-6e90fcbee345" width="80%" height="80%"/>
+</p>
+
+### :boom: 리스트 체크 여부 구분짓기
+#### :interrobang: 고민
+```
+선택삭제와 전체삭제 버튼을 눌렀을 때 체크되어있는 리스트만 삭제되는 기능을 만들고 싶었다.
+```
+#### :100: 해결 방법
+```
+이미 개별 체크된 리스트를 제외한 나머지 리스트에도 체크 표시를 하거나(개별/전체 체크 선택 시)
+또는 그 반대의 경우(개별/전체 체크 해제 시),
+리스트에 포함된 css classList에 on, hidden 클래스가 존재하는지 여부에 따라
+구분되어 작동되도록 코드를 구성했다.
+```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/129dcf35-d69d-4ce8-a316-cd93cf1ac330" width="40%" height="40%" />
+  <img src="https://github.com/user-attachments/assets/1de10ad9-b392-4589-a62c-1c54fd3f8f39" width="80%" height="80%"/>
+</p>
 <br>
 
 ***
